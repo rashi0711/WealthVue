@@ -2,7 +2,7 @@ version: '3'
 services:
   service-registry:
     build:
-      context: ./backend/service-registry
+      context: ./back-end/service-registry
     image: service-registry
     container_name: service-registry
     ports:
@@ -11,7 +11,7 @@ services:
       - wealthvue
   api-gateway:
     build:
-      context: ./backend/api-gateway
+      context: ./back-end/api-gateway
     image: api-gateway
     container_name: api-gateway
     ports:
@@ -20,7 +20,7 @@ services:
       - wealthvue
   users-service:
     build:
-      context: ./backend/user
+      context: ./back-end/user
     image: users-service
     container_name: users-service
     ports:
@@ -29,7 +29,7 @@ services:
       - wealthvue
   stock-service:
     build:
-      context: ./backend/stock
+      context: ./back-end/stock
     image: stock-service
     container_name: stock-service
     ports:
@@ -38,7 +38,7 @@ services:
       - wealthvue
   portfolio-service:
     build:
-      context: ./backend/portfolio
+      context: ./back-end/portfolio
     image: portfolio-service
     container_name: portfolio-service
     ports:
@@ -47,7 +47,7 @@ services:
       - wealthvue
   budget-service:
     build:
-      context: ./backend/budgeting
+      context: ./back-end/budgeting
     image: budget-service
     container_name: budget-service
     ports:
@@ -56,7 +56,7 @@ services:
       - wealthvue
   esg-service:
     build:
-      context: ./backend/esg
+      context: ./back-end/esg
     image: esg-service
     container_name: esg-service
     ports:
