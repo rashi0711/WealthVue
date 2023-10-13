@@ -19,7 +19,6 @@ public class BudgetService {
     }
 
     public Budget createBudget(Budget budget) {
-        System.out.println(budget);
         return budgetRepository.save(budget);
 
     }
@@ -34,24 +33,7 @@ public class BudgetService {
         return budgetRepository.findAll();
     }
 
-//    public void updateBudget(Budget budget) {
-//        Budget existingBudget = budgetRepository.findById(budget.getId());
-//
-//            Budget budgetToUpdate = existingBudget.get();
-//            budgetToUpdate.setExpenses(budget.getExpenses()+existingBudget.getExpenses());
-//            budgetRepository.save(budgetToUpdate);
-
-
-   // }
-    
-
     public void deleteBudget(String id) {
         budgetRepository.deleteById(id);
     }
-
-//    public BigDecimal calculateBudgetBreakdown(Budget budget) {
-//        return budget.getAmount().subtract(budget.getExpenses());
-//    }
-
-
 }

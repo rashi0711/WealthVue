@@ -18,7 +18,6 @@ public class ExpenseController {
 
     @PostMapping("/create")
     public Expense createExpense(@RequestBody Expense expense) {
-
         return expenseService.createExpense(expense);
     }
     @CrossOrigin(origins = "http://localhost:3000")

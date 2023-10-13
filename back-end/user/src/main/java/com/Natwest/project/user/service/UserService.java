@@ -71,6 +71,7 @@ public class UserService {
     public String login(LoginRequest loginRequest) {
 
         User dbUser = userRepository.findByEmail(loginRequest.getEmail());
+        
         if (dbUser != null) {
 
             if (loginRequest.getPassword().equals(dbUser.getPassword())) {

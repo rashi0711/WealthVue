@@ -14,7 +14,7 @@ import java.util.Date;
 public class Expense {
     @Id
     private String id;
-   private String description;
+    private String description;
     private Integer amount;
     private String budgetId;
     private Date createdAt;

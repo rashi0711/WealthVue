@@ -22,8 +22,6 @@ import java.util.List;
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Portfolio {
-//    @Transient
-//    public static final String SEQUENCE_NAME = "portfolio _sequence";
     @Id
     private String portfolioId;
     private String portfolioName;

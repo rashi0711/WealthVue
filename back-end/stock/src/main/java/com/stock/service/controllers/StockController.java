@@ -39,9 +39,6 @@ public class StockController {
     }
 
     @GetMapping("/getAll/{id}")
-//    public Flux<Stock> getStockByIds(@PathVariable List<String> id) {
-//        return stockService.getStockByIds(id);
-//    }
     public Mono<List<Stock>> getStockByIds(@PathVariable List<String> id){
         return stockService.getStocksByIds(id);
     }

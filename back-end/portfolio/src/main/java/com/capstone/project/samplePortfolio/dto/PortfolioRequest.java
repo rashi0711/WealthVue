@@ -21,10 +21,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class PortfolioRequest {
-//    @Transient
-//    public static final String SEQUENCE_NAME = "portfolio _sequence";
-//    @Id
-//    private String portfolioId;
+
     @NotNull(message = "Portfolio name should not be null")
     private String portfolioName;
     @NotNull(message = "InvestmentAgenda should not be null")

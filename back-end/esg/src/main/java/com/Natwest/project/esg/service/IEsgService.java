@@ -8,7 +8,5 @@ public interface IEsgService {
 
     String saveEsg (Esg esg);
     List<Esg> getAllEsg();
-//    List<Esg> getEsgByDataType(String dataType);
-
 
 }

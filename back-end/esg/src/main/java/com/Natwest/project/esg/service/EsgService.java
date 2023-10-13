@@ -23,11 +23,4 @@ public class EsgService implements IEsgService{
     public List<Esg> getAllEsg() {
         return esgRepo.findAll();
     }
-
-//    @Override
-//    public List<Esg> getEsgByDataType(String dataType) {
-//        return esgRepo.findByDataType(dataType); // Implement the findByDataType method in your repository
-//    }
-
-
 }

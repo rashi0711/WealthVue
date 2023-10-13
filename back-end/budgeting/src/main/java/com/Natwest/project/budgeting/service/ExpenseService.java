@@ -1,7 +1,6 @@
 package com.Natwest.project.budgeting.service;
 import com.Natwest.project.budgeting.model.Budget;
 import com.Natwest.project.budgeting.repository.BudgetRepository;
-import com.Natwest.project.budgeting.model.Budget;
 import com.Natwest.project.budgeting.model.Expense;
 import com.Natwest.project.budgeting.repository.ExpenseRepository;
 import org.springframework.beans.factory.annotation.Autowired;

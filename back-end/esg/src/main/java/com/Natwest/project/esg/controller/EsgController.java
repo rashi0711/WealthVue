@@ -24,11 +24,4 @@ public class EsgController {
         return new ResponseEntity<List<Esg>>(esgService.getAllEsg(),HttpStatus.OK);
     }
 
-//    @GetMapping("/getByDataType")
-//    public ResponseEntity<List<Esg>> readById(@RequestParam String dataType){
-//        return new ResponseEntity<List<Esg>>(esgService.getEsgByDataType(dataType),HttpStatus.OK);
-//    }
-
-
-
 }
