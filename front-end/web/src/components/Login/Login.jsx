@@ -7,14 +7,6 @@ import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 
-
-
-
-  
-
-  
-
-
 const Login = () => {
   const [inputs, setInputs] = useState({
     email: "",
